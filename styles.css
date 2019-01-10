@@ -1,4 +1,5 @@
 @import url(fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);
 body {
   color: #555;
   margin: 0;
@@ -109,7 +110,7 @@ font-size: 1em;
 }
 
 
-//showcase--------------------------------------------------------------
+<!-- showcase-------------------------------------------------------------- -->
 
 .showcase {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
@@ -219,4 +220,4 @@ font-size: 1em;
   transform: scale(1.1);
 }
 
-// End Showcase --------------------------------------------------------
+<!-- End Showcase -------------------------------------------------------- -->
