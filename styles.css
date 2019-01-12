@@ -67,6 +67,12 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+.sub-title {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
 .post {
   max-width: 800px;
   margin: 0 auto;
@@ -109,3 +115,67 @@ color: blue;
 font-size: 1em;
 }
 
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 30em;
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 5px 5px;
+  border-radius: 6px;
+
+  /* Position the tooltip text*/
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+/* Position the arrow of the tooltip text towards the original text */
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 30%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+ /* Button CSS */
+.button {
+  margin: auto;
+  display: block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  width: 50%;
+
+}
+
+.button:hover {
+  background-color: #242424;
+}
+
+
+/* END Button CSS */
