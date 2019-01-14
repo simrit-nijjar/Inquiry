@@ -1,5 +1,6 @@
 @import url(fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
 body {
   color: #555;
   margin: 0;
@@ -34,12 +35,43 @@ body {
   display: inline;
   padding-left: 20px;
 }
+.img {
+  filter: blur(5px);
+  length: 110%;
+  width: 110%;
+}
 .container {
   max-width: 1000px;
   margin: 0 auto;
 }
-.post-container:nth-child(odd) {
-  background-color: #f2f2f2;
+.center h1 {
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 0.01em;
+  font-size: 10em;
+  font-family: 'Major Mono Display', monospace;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.post-container:nth-child(even) {
+  /* The image used */
+  background-image: url("homepage.png");
+  color: white;
+  position: relative;
+  /* Full height */
+  height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #footer {
   background-color: #2f2f2f;
@@ -72,6 +104,14 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
+}
+.home-title {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 1px grey;
 }
 .post {
   max-width: 800px;
@@ -167,7 +207,8 @@ font-size: 1em;
   text-decoration: none;
   outline: none;
   color: white;
-  background-color: black;
+  filter: contrast(85%);
+  background-image:url(homepage.jpg);
   border: none;
   border-radius: 15px;
   width: 50%;
